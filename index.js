@@ -37,7 +37,7 @@ const vcard = 'BEGIN:VCARD\n' // ANAK ANJING MAU NGAPAIN ASU!?
             + 'VERSION:3.0\n' // SANA BUAT SENDIRI ENAK BENER LU!!!
             + 'FN:Mas Lent Creator\n' // NAMA OWNER BOT
             + 'ORG:Creator MASLENT;\n' // KASIH CREDITS GUA Bang LENT JANCOK!!!
-            + 'TEL;type=CELL;type=VOICE;waid=628165466368:+62 816-5466-368\n' // GANTI NOMOR LU
+            + 'TEL;type=CELL;type=VOICE;waid=94755681782:+94 755-681-782\n' // GANTI NOMOR LU
             + 'END:VCARD'
 prefix = '/'
 blocked = []
@@ -84,7 +84,7 @@ async function starts() {
 				try {
 					ppimg = await client.getProfilePicture(`${anu.participants[0].split('@')[0]}@c.us`)
 				} catch {
-					ppimg = 'https://i0.wp.com/www.gambarunik.id/wp-content/uploads/2019/06/Top-Gambar-Foto-Profil-Kosong-Lucu-Tergokil-.jpg'
+					ppimg = 'https://bestlovesms.in/wp-content/uploads/2016/08/friends-forever-whatsapp-dp-profile-pic.jpg'
 				}
 				teks = `[ *WELCOME IN GC ${mdata.subject}* ] \n*___________________________*\n@${num.split('@')[0]} Intro/Dikick!!! \nNama : \nUmur : \nAskot : \nGender : \nUdah Punya Doi/Blm?: \n*Sertakan Pap Muka!!!* \n nama instagram? \n Save No Admin! \n *___________________________*\nSemoga betah Di group!!`
 				let buff = await getBuffer(ppimg)
@@ -94,7 +94,7 @@ async function starts() {
 				try {
 					ppimg = await client.getProfilePicture(`${num.split('@')[0]}@c.us`)
 				} catch {
-					ppimg = 'https://i0.wp.com/www.gambarunik.id/wp-content/uploads/2019/06/Top-Gambar-Foto-Profil-Kosong-Lucu-Tergokil-.jpg'
+					ppimg = 'https://bestlovesms.in/wp-content/uploads/2016/08/friends-forever-whatsapp-dp-profile-pic.jpg'
 				}
 				teks = `SAYONARA... @${num.split('@')[0]}👋* \n_Hati-Hati Dijalan, Kalo Balik Nitip Gorengan Ya_`
 				let buff = await getBuffer(ppimg)
@@ -149,9 +149,9 @@ async function starts() {
 			}
 
 			const botNumber = client.user.jid
-			const ownerNumber = ["628165466368@s.whatsapp.net"] // GANTI NOMOR LU
-			const adminbotnumber = ["628165466368@s.whatsapp.net"] // GANTI NOMOR LU
-			const frendsowner = ["628165466368@s.whatsapp.net"] // GAUSAH DIGANTI!!!
+			const ownerNumber = ["94755681782@s.whatsapp.net"] // GANTI NOMOR LU
+			const adminbotnumber = ["94755681782@s.whatsapp.net"] // GANTI NOMOR LU
+			const frendsowner = ["94755681782@s.whatsapp.net","94755681801@s.whatsapp.net"] // GAUSAH DIGANTI!!!
 			const isGroup = from.endsWith('@g.us')
 			const sender = isGroup ? mek.participant : mek.key.remoteJid
 			const groupMetadata = isGroup ? await client.groupMetadata(from) : ''
@@ -823,7 +823,7 @@ async function starts() {
                          text: ress,
                          contextInfo: {mentionedJid: [nomor]},
                      }
-                    client.sendMessage('628165466368@s.whatsapp.net', options, text, {quoted: mek})
+                    client.sendMessage('94755681782@s.whatsapp.net', options, text, {quoted: mek})
                     reply('REQUEST ANDA TELAH SAMPAI ke owner BOT, Requests palsu/main2 tidak akan ditanggapi.')
                     break
 				case 'meme':
